@@ -16,7 +16,7 @@ def import
   # p files
    files.each {|filename|
     # p Song.new_by_filename(filename)}
-    p Artist.all.each{|x| puts x.name}
-  end
 
+  end
+  p Artist.all.each{|x| puts x.name}
 end
