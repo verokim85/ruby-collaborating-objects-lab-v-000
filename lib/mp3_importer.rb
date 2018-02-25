@@ -13,9 +13,8 @@ def files
 end
 
 def import
-   files.each {|filename| p Song.new_by_filename(filename)
-
-   }
+  p files
+  #  files.each {|filename| Song.new_by_filename(filename)}
 
 end
 
