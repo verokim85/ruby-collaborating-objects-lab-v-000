@@ -5,7 +5,7 @@ def initialize(name)
   @name= name
 end
 
-def artist_name(name)
+def artist_name=(name)
   @name = add_song(name)
   song.name = Artist.find_or_create_by_name(name)
 end
