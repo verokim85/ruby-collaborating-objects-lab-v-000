@@ -26,6 +26,7 @@ def self.find_or_create_by_name(name)
       if artist == nil
         artist = Artist.new(name)
       end
+    return artist
 end
 
 
