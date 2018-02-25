@@ -22,7 +22,8 @@ def save
 end
 
 def self.find_or_create_by_name(name)
-    self.all.detect {|person| person.name = self }
+    artist = self.all.detect {|person| person.name = self }
+    if
 end
 
 
