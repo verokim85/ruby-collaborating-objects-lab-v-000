@@ -23,8 +23,8 @@ end
 
 def self.find_or_create_by_name(name)
     artist = self.all.detect {|person| person.name = self }
-    if artist == nil
-      @artist = artist
+      if artist == nil
+        artist = Artist.new(name)
 end
 
 
