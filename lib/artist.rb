@@ -22,7 +22,7 @@ def save
 end
 
 def self.find_or_create_by_name(name)
-    artist = self.all.detect {|person| person.name = self }
+    artist = self.all.detect {|person| person.name = name }
     if artist == nil
       artist = Artist.new(name)
     end
